@@ -1,0 +1,154 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+.loginbox{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	color: whitesmoke;
+	border-radius: 10px;
+}
+.center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+.center h1{
+	text-align: center;
+	padding: 0 10 20px 0;
+	border-bottom: 1px solid silver;
+}
+.center form{
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+form .txt_field{
+	position: relative;
+	border-bottom: 2px solid #adadad;
+	margin: 30px 0;
+}
+.txt_field input{
+	width:  100%;
+	padding:  0 5px;
+	color: whitesmoke;
+	height: 40px;
+	font-size: 16px;
+	border: none;
+	background: none;
+	outline: none;
+}
+.txt_file label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	color: #adadad;
+	transform: translate(-50%);
+	font-size: 16px;
+	padding-events: none;
+	transition: .5s;
+}
+.txt_field span::before{
+	content:'';
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background:#2691d9;
+	transition: :.5s;
+}
+	.txt_field input:focus ~ label,
+	.txt_field input:valid ~ label{
+	top: -5px;
+	color:whitesmoke;
+}
+	.txt_field input:focus ~ span::before,
+	.txt_field input:valid ~ span: :before{
+	width: 100%;
+}
+.pass{
+	margin: -5px 0 20px 5px;
+	color: whitesmoke;
+	cursor: pointer;
+}
+.pass:hover{
+	text-decoration: underline;
+}
+input[type="submit"]{
+	width: 100%;
+	height: 50px;
+	border: :1px solid;
+	
+	border-radius: 25px;
+	font-size: 18px;
+	
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+}
+input[type="submit"]:hover{
+	border-color: red;
+	transition: .5s;
+}
+body{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(food.jpg);
+	height: 633px;
+	width: 1250px;
+	background-size: cover;
+	background-position: top;
+}
+.signupbox{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	background: black;
+	color: whitesmoke;
+	border-radius: 10px;
+}
+
+header{
+	
+	height: 140px;
+	width: 1270px;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 40px;
+
+}
+ul li{
+	display: inline-block;
+
+}
+ul li a{
+	text-decoration: none;
+	color: whitesmoke;
+	padding: 6px 25px;
+	border: 1px solid transparent;
+	transition: 0.3s ease;
+}
+ul li a:hover{
+	background-color: whitesmoke;
+	color: black;
+}
+ul li.active a{
+	background-color: whitesmoke;
+	color: black;
+}
+.logo img{
+	float: left;
+	width: 200px;
+	height: 140px;
+	
+}

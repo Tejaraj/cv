@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+header{
+	background-color: black;
+	height: 140px;
+	width: 1270px;
+
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(food.jpg);
+	height: 640px;
+	width: 100%;
+	background-size: cover;
+	background-position: top;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 40px;
+
+}
+ul li{
+	display: inline-block;
+
+}
+ul li a{
+	text-decoration: none;
+	color: whitesmoke;
+	padding: 6px 25px;
+	border: 1px solid transparent;
+	transition: 0.3s ease;
+}
+ul li a:hover{
+	background-color: whitesmoke;
+	color: black;
+}
+ul li.active a{
+	background-color: whitesmoke;
+	color: black;
+}
+.logo img{
+	float: left;
+	width: 200px;
+	height: 140px;
+	
+}
+.main{
+	max-width: 1500px;
+	margin: auto;
+}
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.title h1{
+	color: whitesmoke;
+	font-size: 70px;
+	font-family: new times roman;
+	text-shadow: 2px 2px 8px #FF0000;
+}
+.title h2{
+	color: whitesmoke;
+	font-size: 50px;
+	text-shadow: 1px 1px 1px whitesmoke;
+
+
+}
+.title h4{
+	color: whitesmoke;
+	font-size: 30px;
+	text-shadow: 1px 1px 1px whitesmoke;
+}
+.button{
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.btn{
+	border: 1px solid whitesmoke;
+	padding: 10px 30px;
+	color: whitesmoke;
+	text-decoration: none;
+	transition: 0.3s ease;
+}
+.btn:hover{
+	background-color: whitesmoke;
+	color: black;
+
+}
